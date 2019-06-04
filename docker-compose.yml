@@ -1,0 +1,25 @@
+version: '3'
+services:
+  # geth:
+  #   image: ethereum/client-go
+  #   command: --datadir=/usr/src/app/.ethereum/devchain --nodekeyhex=091bd6067cb4612df85d9c1ff85cc47f259ced4d4cd99816b14f35650f59c322 --rpcapi "db,personal,eth,net,web3" --rpccorsdomain='*' --networkid=1234 --rpc --rpcaddr="0.0.0.0"
+  #   volumes:
+  #     - ./files/password:/usr/src/app/files/password:ro
+  #     - ./files/keystore:/usr/src/app/.ethereum/devchain/keystore:rw
+  #   ports:
+  #     - "30303:30303"
+  #     - "30303:30303/udp"
+  #     - "8545:8545"
+  eth-gateway.xyo.network:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - PORT=8081
+      - LEVEL_STORE=/usr/src/app/diviner-store
+      - IPC_ENDPOINT=/Users/ryanhansen/Library/Ethereum/geth.ipc
+      - DEBUG=account:*,notifier:*
+    volumes:
+      - ./diviner-store:/usr/src/app/diviner-store

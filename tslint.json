@@ -1,0 +1,24 @@
+/*
+ * @Author: XY | The Findables Company <ryanxyo>
+ * @Date:   Friday, 17th August 2018 9:51:03 am
+ * @Email:  developer@xyfindables.com
+ * @Filename: tslint.json
+ * @Last modified by: ryanxyo
+ * @Last modified time: Wednesday, 12th September 2018 2:13:25 pm
+ * @License: All Rights Reserved
+ * @Copyright: Copyright XY | The Findables Company
+ */
+
+{
+  "extends": ["@xyo-network/config-tslint"],
+  "linterOptions": {
+    "exclude": ["./src/gql/*.{ts,tsx}"]
+  },
+  "rules": {
+    "array-type": false,
+    "space-before-function-paren": false,
+    "max-line-length": false,
+    "variable-name": false,
+    "import-name": false
+  }
+}

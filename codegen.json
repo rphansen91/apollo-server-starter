@@ -1,0 +1,16 @@
+{
+  "schema": "./src/gql/**/schema.ts",
+  "documents": "./src/bindings/**/schema.ts",
+  "generates": {
+    "./src/gql/bindings.tsx": {
+      "plugins": [
+        "typescript",
+        "typescript-operations",
+        "typescript-react-apollo"
+      ]
+    },
+    "./src/gql/types.ts": {
+      "plugins": ["typescript", "typescript-operations", "typescript-resolvers"]
+    }
+  }
+}

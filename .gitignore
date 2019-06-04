@@ -1,0 +1,12 @@
+node_modules/
+diviner-store/
+.serverless/
+/bindings/
+files/
+dist/
+kube/
+.env
+.env.ecs
+serviceAccount.json
+yarn-error.log
+.rpt2_cache
