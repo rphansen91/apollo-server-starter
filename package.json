@@ -65,7 +65,7 @@
     "graphql-type-json": "^0.3.0",
     "isomorphic-fetch": "^2.2.1",
     "js-sha3": "^0.8.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "merge-graphql-schemas": "^1.5.8",
     "mongodb": "^3.2.5",
     "multiaddr": "^6.0.4",
