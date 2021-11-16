@@ -45,7 +45,7 @@
     "apollo-server-lambda": "^2.3.3",
     "aws": "^0.0.3-2",
     "aws-lambda": "^0.1.2",
-    "aws-sdk": "^2.441.0",
+    "aws-sdk": "^2.814.0",
     "bn.js": "^4.11.8",
     "commander": "^2.19.0",
     "dataloader": "^1.4.0",
